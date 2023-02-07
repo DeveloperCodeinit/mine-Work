@@ -15,6 +15,7 @@ class CompanyController extends Controller
     {
         $companies = Company::orderBy('id','desc')->paginate(5);
         return view('companies.index', compact('companies'));
+
     }
 
     /**
@@ -25,6 +26,7 @@ class CompanyController extends Controller
     public function create()
     {
         return view('companies.create');
+        
     }
 
     /**
