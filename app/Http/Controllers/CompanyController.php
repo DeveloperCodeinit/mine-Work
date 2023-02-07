@@ -18,6 +18,8 @@ class CompanyController extends Controller
 
     }
 
+    
+
     /**
     * Show the form for creating a new resource.
     *
@@ -26,7 +28,7 @@ class CompanyController extends Controller
     public function create()
     {
         return view('companies.create');
-        
+
     }
 
     /**
