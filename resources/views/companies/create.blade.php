@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Add Company Form - Laravel 9 CRUD</title>
+   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <!-- call the header component -->
+     <x-header data="Add Company title" />
 </head>
 
 <body>
@@ -32,7 +35,7 @@
                         <strong>Company Name:</strong>
                         <input type="text" name="name" class="form-control" placeholder="Company Name">
                         @error('name')
-                        <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                        <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div> 
                         @enderror
                     </div>
                 </div>

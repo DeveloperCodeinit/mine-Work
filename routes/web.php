@@ -20,4 +20,8 @@ Route::get('/', function () {
 });
 
 
-Route::resource('companies', CompanyController::class);
+Route::resource('companies', CompanyController::class);  
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/captcha_solver', [App\Http\Controllers\captchaController::class, 'index'])->name('captcha_solver');
