@@ -21,3 +21,4 @@ Route::get('/', function () {
 
 
 Route::resource('companies', CompanyController::class);
+Route::resource('companies2', CompanyController::class);
