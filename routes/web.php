@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CompanyController;
+use App\Http\Controllers\CaptchaController;
 use App\Http\Controllers\Company;
 
 /*
@@ -21,4 +22,4 @@ Route::get('/', function () {
 
 
 Route::resource('companies', CompanyController::class);
-Route::resource('companies2', CompanyController::class);
+Route::resource('captcha_solver', CaptchaController::class); 
