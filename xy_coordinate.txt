@@ -1,0 +1,5 @@
+X and y coordinate:
+ 
+
+var element = document.querySelector('selector'); // Replace 'selector' with the CSS selector for the element you want to check
+console.log('X:', element.offsetLeft, 'Y:', element.offsetTop);
