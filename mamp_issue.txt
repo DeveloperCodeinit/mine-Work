@@ -1,0 +1,32 @@
+Apologies for the confusion. On macOS, you can install PHP and Composer using Homebrew. Here are the steps to install PHP and Composer on macOS:
+
+Install Homebrew by running the following command in your terminal:
+Copy code
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+Install PHP by running the following command:
+Copy code
+brew install php
+
+
+Install Composer by running the following command:
+Copy code
+brew install composer
+
+Once PHP and Composer are installed, make sure their binary files are in your PATH. You can check if the binary files are in your PATH by running the echo $PATH command in your terminal. The output should include the directories where PHP and Composer are installed.
+
+If the binary files are not in your PATH, add their directories to your PATH. You can do this by adding the following lines to your shell profile file (e.g., ~/.bash_profile):
+
+Copy code
+export PATH="/usr/local/opt/php/bin:$PATH"
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+Save and close the shell profile file, and reload it by running the following command:
+
+
+Copy code
+source ~/.bash_profile
+
+Test that PHP and Composer are now in your PATH by running the following commands:
+Copy code
+php -v
+composer -v
