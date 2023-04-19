@@ -1,4 +1,6 @@
 <?php
+
+/* -------------------------------------------------  EVOTRO FUNCION FILE ------------------------------------------------- */
 // Exit if accessed directly
 if ( !defined( 'ABSPATH' ) ) exit;
 
